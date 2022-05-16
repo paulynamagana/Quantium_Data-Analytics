@@ -224,8 +224,7 @@ December. Let's zoom in on this.
 #### Filter to December and look at individual days
 ggplot(transactions_by_day[month(DATE) == 12, ], aes(x = DATE, y = N)) +
 geom_line() +
-labs(x = "Day", y = "Number of transactions", title = "Transactions over
-↪ time") +
+labs(x = "Day", y = "Number of transactions", title = "Transactions over time") +
 scale_x_date(breaks = "1 day") +
 theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
 ```
