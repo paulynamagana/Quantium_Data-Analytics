@@ -1,5 +1,7 @@
 ## Quantium
+
 Quantium is leading data science and AI Firm, founded in Australia in 2002 and offers a 17-year track record of innovation in data science. Quantium combines the best of human and artificial intelligence to power possibilities for individuals, organisations, and society.
+
 -----------
 ## Project Overview
 -----------
