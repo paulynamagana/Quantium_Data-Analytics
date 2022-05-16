@@ -1,0 +1,1180 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[]{Roboto}
+  \setmonofont[]{Consolas}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Quantium Virtual Internship - Retail Strategy and Analytics - Task 1},
+  pdfauthor={Paulyna Magana},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{fvextra} \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Quantium Virtual Internship - Retail Strategy and Analytics -
+Task 1}
+\author{Paulyna Magana}
+\date{}
+
+\begin{document}
+\maketitle
+
+\hypertarget{solution-template-for-task-1}{%
+\section{Solution template for Task
+1}\label{solution-template-for-task-1}}
+
+This file is a solution template for the Task 1 of the Quantium Virtual
+Internship. It will walk you through the analysis, providing the
+scaffolding for your solution with gaps left for you to fill in
+yourself.
+
+\hypertarget{load-required-libraries-and-datasets}{%
+\subsection{Load required libraries and
+datasets}\label{load-required-libraries-and-datasets}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Example code to install packages}
+\CommentTok{\#install.packages("data.table")}
+\DocumentationTok{\#\#\#\# Load required libraries}
+\FunctionTok{library}\NormalTok{(data.table)}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+\FunctionTok{library}\NormalTok{(ggmosaic)}
+\FunctionTok{library}\NormalTok{(readr)}
+\FunctionTok{library}\NormalTok{(readxl)}
+\FunctionTok{library}\NormalTok{(dplyr)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Attaching package: 'dplyr'
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:data.table':
+## 
+##     between, first, last
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:stats':
+## 
+##     filter, lag
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Point the filePath to where you have downloaded the datasets to and}
+\DocumentationTok{\#\#\#\# assign the data files to data.tables}
+
+\NormalTok{transactionData }\OtherTok{\textless{}{-}} \FunctionTok{data.table}\NormalTok{(}\FunctionTok{read\_excel}\NormalTok{(}\StringTok{"QVI\_transaction\_data.xlsx"}\NormalTok{))}
+\NormalTok{customerData }\OtherTok{\textless{}{-}} \FunctionTok{fread}\NormalTok{(}\StringTok{"QVI\_purchase\_behaviour.csv"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{exploratory-data-analysis}{%
+\subsection{Exploratory data analysis}\label{exploratory-data-analysis}}
+
+The first step in any analysis is to first understand the data. Let's
+take a look at each of the datasets provided.
+
+\hypertarget{examining-transaction-data}{%
+\subsubsection{Examining transaction
+data}\label{examining-transaction-data}}
+
+We can use \texttt{str()} to look at the format of each column and see a
+sample of the data. As we have read in the dataset as a
+\texttt{data.table} object, we can also run \texttt{transactionData} in
+the console to see a sample of the data or use
+\texttt{head(transactionData)} to look at the first 10 rows.
+
+Let's check if columns we would expect to be numeric are in numeric form
+and date columns are in date format.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Examine transaction data}
+\FunctionTok{str}\NormalTok{(transactionData)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Classes 'data.table' and 'data.frame': 264836 obs. of 8 variables:
+## $ DATE : num 43390 43599 43605 43329 43330 ...
+## $ STORE_NBR : num 1 1 1 2 2 4 4 4 5 7 ...
+## $ LYLTY_CARD_NBR: num 1000 1307 1343 2373 2426 ...
+## $ TXN_ID : num 1 348 383 974 1038 ...
+## $ PROD_NBR : num 5 66 61 69 108 57 16 24 42 52 ...
+## $ PROD_NAME : chr "Natural Chip Compny SeaSalt175g" "CCs Nacho Cheese 175g"
+"Smiths Crinkle Cut Chips Chicken 170g" "Smiths Chip Thinly S/Cream&Onion 175g"
+...
+## $ PROD_QTY : num 2 3 2 5 3 1 1 1 1 2 ...
+## $ TOT_SALES : num 6 6.3 2.9 15 13.8 5.1 5.7 3.6 3.9 7.2 ...
+## - attr(*, ".internal.selfref")=<externalptr>
+\end{verbatim}
+
+The date column is in an integer format. Let's change this to a date
+format.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Convert DATE column to a date format}
+\DocumentationTok{\#\#\#\# A quick search online tells us that CSV and Excel integer dates begin on 30Dec 1899}
+\NormalTok{transactionData}\SpecialCharTok{$}\NormalTok{DATE }\OtherTok{\textless{}{-}} \FunctionTok{as.Date}\NormalTok{(transactionData}\SpecialCharTok{$}\NormalTok{DATE, }\AttributeTok{origin =} \StringTok{"1899{-}12{-}30"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Examine transaction data}
+\FunctionTok{head}\NormalTok{(transactionData)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##          DATE STORE_NBR LYLTY_CARD_NBR TXN_ID PROD_NBR
+## 1: 2018-10-17         1           1000      1        5
+## 2: 2019-05-14         1           1307    348       66
+## 3: 2019-05-20         1           1343    383       61
+## 4: 2018-08-17         2           2373    974       69
+## 5: 2018-08-18         2           2426   1038      108
+## 6: 2019-05-19         4           4074   2982       57
+##                                   PROD_NAME PROD_QTY TOT_SALES
+## 1:   Natural Chip        Compny SeaSalt175g        2       6.0
+## 2:                 CCs Nacho Cheese    175g        3       6.3
+## 3:   Smiths Crinkle Cut  Chips Chicken 170g        2       2.9
+## 4:   Smiths Chip Thinly  S/Cream&Onion 175g        5      15.0
+## 5: Kettle Tortilla ChpsHny&Jlpno Chili 150g        3      13.8
+## 6: Old El Paso Salsa   Dip Tomato Mild 300g        1       5.1
+\end{verbatim}
+
+We should check that we are looking at the right products by examining
+PROD\_NAME.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Examine PROD\_NAME}
+\NormalTok{transactionData[, .N, PROD\_NAME]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                                     PROD_NAME    N
+##   1:   Natural Chip        Compny SeaSalt175g 1468
+##   2:                 CCs Nacho Cheese    175g 1498
+##   3:   Smiths Crinkle Cut  Chips Chicken 170g 1484
+##   4:   Smiths Chip Thinly  S/Cream&Onion 175g 1473
+##   5: Kettle Tortilla ChpsHny&Jlpno Chili 150g 3296
+##  ---                                              
+## 110:    Red Rock Deli Chikn&Garlic Aioli 150g 1434
+## 111:      RRD SR Slow Rst     Pork Belly 150g 1526
+## 112:                 RRD Pc Sea Salt     165g 1431
+## 113:       Smith Crinkle Cut   Bolognese 150g 1451
+## 114:                 Doritos Salsa Mild  300g 1472
+\end{verbatim}
+
+Basic text analysis by summarising the individual words in the product
+name.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Examine the words in PROD\_NAME to see if there are any incorrect entries}
+\DocumentationTok{\#\#\#\# such as products that are not chips}
+\NormalTok{productWords }\OtherTok{\textless{}{-}} \FunctionTok{data.table}\NormalTok{(}\FunctionTok{unlist}\NormalTok{(}\FunctionTok{strsplit}\NormalTok{(}\FunctionTok{unique}\NormalTok{(transactionData[, PROD\_NAME]), }\StringTok{" "}\NormalTok{)))}
+\FunctionTok{setnames}\NormalTok{(productWords, }\StringTok{\textquotesingle{}words\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+As we are only interested in words that will tell us if the product is
+chips or not, let's remove all words with digits and special characters
+such as `\&' from our set of product words. We can do this using
+\texttt{grepl()}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Removing digits}
+\NormalTok{productWords }\OtherTok{\textless{}{-}}\NormalTok{ productWords[}\FunctionTok{grepl}\NormalTok{(}\StringTok{"}\SpecialCharTok{\textbackslash{}\textbackslash{}}\StringTok{d"}\NormalTok{, words) }\SpecialCharTok{==} \ConstantTok{FALSE}\NormalTok{, ]}
+\DocumentationTok{\#\#\#\# Removing special characters}
+\NormalTok{productWords }\OtherTok{\textless{}{-}}\NormalTok{ productWords[}\FunctionTok{grepl}\NormalTok{(}\StringTok{"[:alpha:]"}\NormalTok{, words), ]}
+\DocumentationTok{\#\#\#\# Let\textquotesingle{}s look at the most common words by counting the number of times a wordappears and}
+\DocumentationTok{\#\#\#\# sorting them by this frequency in order of highest to lowest frequency}
+\NormalTok{productWords[, .N, words][}\FunctionTok{order}\NormalTok{(N, }\AttributeTok{decreasing =} \ConstantTok{TRUE}\NormalTok{)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##             words  N
+##   1:        Chips 21
+##   2:       Smiths 16
+##   3:      Crinkle 14
+##   4:       Kettle 13
+##   5:       Cheese 12
+##  ---                
+## 127: Chikn&Garlic  1
+## 128:        Aioli  1
+## 129:         Slow  1
+## 130:        Belly  1
+## 131:    Bolognese  1
+\end{verbatim}
+
+There are salsa products in the dataset but we are only interested in
+the chips category, so let's remove these.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Remove salsa products}
+\NormalTok{transactionData[, SALSA }\SpecialCharTok{:}\ErrorTok{=} \FunctionTok{grepl}\NormalTok{(}\StringTok{"salsa"}\NormalTok{, }\FunctionTok{tolower}\NormalTok{(PROD\_NAME))]}
+\NormalTok{transactionData }\OtherTok{\textless{}{-}}\NormalTok{ transactionData[SALSA }\SpecialCharTok{==} \ConstantTok{FALSE}\NormalTok{, ][, SALSA }\SpecialCharTok{:}\ErrorTok{=} \ConstantTok{NULL}\NormalTok{]}
+\end{Highlighting}
+\end{Shaded}
+
+Next, we can use \texttt{summary()} to check summary statistics such as
+mean, min and max values for each feature to see if there are any
+obvious outliers in the data and if there are any nulls in any of the
+columns (\texttt{NA\textquotesingle{}s\ :\ number\ of\ nulls} will
+appear in the output if there are any nulls).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Summarise the data to check for nulls and possible outliers}
+\FunctionTok{summary}\NormalTok{(transactionData)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##       DATE              STORE_NBR     LYLTY_CARD_NBR        TXN_ID       
+##  Min.   :2018-07-01   Min.   :  1.0   Min.   :   1000   Min.   :      1  
+##  1st Qu.:2018-09-30   1st Qu.: 70.0   1st Qu.:  70015   1st Qu.:  67569  
+##  Median :2018-12-30   Median :130.0   Median : 130367   Median : 135183  
+##  Mean   :2018-12-30   Mean   :135.1   Mean   : 135531   Mean   : 135131  
+##  3rd Qu.:2019-03-31   3rd Qu.:203.0   3rd Qu.: 203084   3rd Qu.: 202654  
+##  Max.   :2019-06-30   Max.   :272.0   Max.   :2373711   Max.   :2415841  
+##     PROD_NBR       PROD_NAME            PROD_QTY         TOT_SALES      
+##  Min.   :  1.00   Length:246742      Min.   :  1.000   Min.   :  1.700  
+##  1st Qu.: 26.00   Class :character   1st Qu.:  2.000   1st Qu.:  5.800  
+##  Median : 53.00   Mode  :character   Median :  2.000   Median :  7.400  
+##  Mean   : 56.35                      Mean   :  1.908   Mean   :  7.321  
+##  3rd Qu.: 87.00                      3rd Qu.:  2.000   3rd Qu.:  8.800  
+##  Max.   :114.00                      Max.   :200.000   Max.   :650.000
+\end{verbatim}
+
+There are no nulls in the columns but product quantity appears to have
+an outlier which we should investigate further. Let's investigate
+further the case where 200 packets of chips are bought in one
+transaction.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Filter the dataset to find the outlier}
+\NormalTok{outlier }\OtherTok{\textless{}{-}}\NormalTok{ transactionData[PROD\_QTY }\SpecialCharTok{==} \DecValTok{200}\NormalTok{,]}
+\end{Highlighting}
+\end{Shaded}
+
+There are two transactions where 200 packets of chips are bought in one
+transaction and both of these transactions were by the same customer.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Let\textquotesingle{}s see if the customer has had other transactions}
+\NormalTok{transactionData[LYLTY\_CARD\_NBR }\SpecialCharTok{==} \DecValTok{226000}\NormalTok{, ]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##          DATE STORE_NBR LYLTY_CARD_NBR TXN_ID PROD_NBR
+## 1: 2018-08-19       226         226000 226201        4
+## 2: 2019-05-20       226         226000 226210        4
+##                           PROD_NAME PROD_QTY TOT_SALES
+## 1: Dorito Corn Chp     Supreme 380g      200       650
+## 2: Dorito Corn Chp     Supreme 380g      200       650
+\end{verbatim}
+
+It looks like this customer has only had the two transactions over the
+year and is not an ordinary retail customer. The customer might be
+buying chips for commercial purposes instead. We'll remove this loyalty
+card number from further analysis.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Filter out the customer based on the loyalty card number}
+\NormalTok{transactionData }\OtherTok{\textless{}{-}}\NormalTok{ transactionData[LYLTY\_CARD\_NBR }\SpecialCharTok{!=} \DecValTok{226000}\NormalTok{, ]}
+\DocumentationTok{\#\#\#\# Re‐examine transaction data}
+\FunctionTok{summary}\NormalTok{(transactionData)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##       DATE              STORE_NBR     LYLTY_CARD_NBR        TXN_ID       
+##  Min.   :2018-07-01   Min.   :  1.0   Min.   :   1000   Min.   :      1  
+##  1st Qu.:2018-09-30   1st Qu.: 70.0   1st Qu.:  70015   1st Qu.:  67569  
+##  Median :2018-12-30   Median :130.0   Median : 130367   Median : 135182  
+##  Mean   :2018-12-30   Mean   :135.1   Mean   : 135530   Mean   : 135130  
+##  3rd Qu.:2019-03-31   3rd Qu.:203.0   3rd Qu.: 203083   3rd Qu.: 202652  
+##  Max.   :2019-06-30   Max.   :272.0   Max.   :2373711   Max.   :2415841  
+##     PROD_NBR       PROD_NAME            PROD_QTY       TOT_SALES     
+##  Min.   :  1.00   Length:246740      Min.   :1.000   Min.   : 1.700  
+##  1st Qu.: 26.00   Class :character   1st Qu.:2.000   1st Qu.: 5.800  
+##  Median : 53.00   Mode  :character   Median :2.000   Median : 7.400  
+##  Mean   : 56.35                      Mean   :1.906   Mean   : 7.316  
+##  3rd Qu.: 87.00                      3rd Qu.:2.000   3rd Qu.: 8.800  
+##  Max.   :114.00                      Max.   :5.000   Max.   :29.500
+\end{verbatim}
+
+That's better. Now, let's look at the number of transaction lines over
+time to see if there are any obvious data issues such as missing data.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Count the number of transactions by date}
+\NormalTok{transactionData[, .N, by }\OtherTok{=}\NormalTok{ DATE]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##            DATE   N
+##   1: 2018-10-17 682
+##   2: 2019-05-14 705
+##   3: 2019-05-20 707
+##   4: 2018-08-17 663
+##   5: 2018-08-18 683
+##  ---               
+## 360: 2018-12-08 622
+## 361: 2019-01-30 689
+## 362: 2019-02-09 671
+## 363: 2018-08-31 658
+## 364: 2019-02-12 684
+\end{verbatim}
+
+There's only 364 rows, meaning only 364 dates which indicates a missing
+date. Let's create a sequence of dates from 1 Jul 2018 to 30 Jun 2019
+and use this to create a chart of number of transactions over time to
+find the missing date.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Create a sequence of dates and join this the count of transactions by date}
+\CommentTok{\# Over to you {-} create a column of dates that includes every day from 1 Jul 2018 to}
+\CommentTok{\#30 Jun 2019, and join it onto the data to fill in the missing day.}
+\NormalTok{allDates }\OtherTok{\textless{}{-}} \FunctionTok{data.table}\NormalTok{(}\FunctionTok{seq}\NormalTok{(}\FunctionTok{as.Date}\NormalTok{(}\StringTok{"2018/07/01"}\NormalTok{), }\FunctionTok{as.Date}\NormalTok{(}\StringTok{"2019/06/30"}\NormalTok{), }\AttributeTok{by =}\StringTok{"day"}\NormalTok{))}
+\FunctionTok{setnames}\NormalTok{(allDates, }\StringTok{"DATE"}\NormalTok{)}
+\NormalTok{transactions\_by\_day }\OtherTok{\textless{}{-}} \FunctionTok{merge}\NormalTok{(allDates, transactionData[, .N, }\AttributeTok{by =}\NormalTok{ DATE], }\AttributeTok{all.x =} \ConstantTok{TRUE}\NormalTok{)}
+\DocumentationTok{\#\#\#\# Setting plot themes to format graphs}
+\FunctionTok{theme\_set}\NormalTok{(}\FunctionTok{theme\_bw}\NormalTok{())}
+\FunctionTok{theme\_update}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{))}
+\DocumentationTok{\#\#\#\# Plot transactions over time}
+\FunctionTok{ggplot}\NormalTok{(transactions\_by\_day, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ DATE, }\AttributeTok{y =}\NormalTok{ N)) }\SpecialCharTok{+}
+\FunctionTok{geom\_line}\NormalTok{() }\SpecialCharTok{+}
+\FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Day"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Number of transactions"}\NormalTok{, }\AttributeTok{title =} \StringTok{"Transactions over time"}\NormalTok{) }\SpecialCharTok{+}
+\FunctionTok{scale\_x\_date}\NormalTok{(}\AttributeTok{breaks =} \StringTok{"1 month"}\NormalTok{) }\SpecialCharTok{+}
+\FunctionTok{theme}\NormalTok{(}\AttributeTok{axis.text.x =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{angle =} \DecValTok{90}\NormalTok{, }\AttributeTok{vjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\includegraphics{Data_preparation_files/figure-latex/unnamed-chunk-7-1} \end{center}
+
+We can see that there is an increase in purchases in December and a
+break in late December. Let's zoom in on this.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Filter to December and look at individual days}
+\FunctionTok{ggplot}\NormalTok{(transactions\_by\_day[}\FunctionTok{month}\NormalTok{(DATE) }\SpecialCharTok{==} \DecValTok{12}\NormalTok{, ], }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ DATE, }\AttributeTok{y =}\NormalTok{ N)) }\SpecialCharTok{+}
+\FunctionTok{geom\_line}\NormalTok{() }\SpecialCharTok{+}
+\FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Day"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Number of transactions"}\NormalTok{, }\AttributeTok{title =} \StringTok{"Transactions over}
+\StringTok{↪ time"}\NormalTok{) }\SpecialCharTok{+}
+\FunctionTok{scale\_x\_date}\NormalTok{(}\AttributeTok{breaks =} \StringTok{"1 day"}\NormalTok{) }\SpecialCharTok{+}
+\FunctionTok{theme}\NormalTok{(}\AttributeTok{axis.text.x =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{angle =} \DecValTok{90}\NormalTok{, }\AttributeTok{vjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <e2>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <86>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <aa>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <e2>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <86>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <aa>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <e2>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <86>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <aa>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <e2>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <86>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <aa>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <e2>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <86>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <aa>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <e2>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <86>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <aa>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <e2>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <86>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <aa>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <e2>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <86>
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+## conversion failure on '↪ time' in 'mbcsToSbcs': dot substituted for <aa>
+\end{verbatim}
+
+\begin{center}\includegraphics{Data_preparation_files/figure-latex/unnamed-chunk-8-1} \end{center}
+
+We can see that the increase in sales occurs in the lead-up to Christmas
+and that there are zero sales on Christmas day itself. This is due to
+shops being closed on Christmas day. Now that we are satisfied that the
+data no longer has outliers, we can move on to creating other features
+such as brand of chips or pack size from PROD\_NAME. We will start with
+pack size.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Always check your output}
+\NormalTok{transactionData[, PACK\_SIZE }\SpecialCharTok{:}\ErrorTok{=} \FunctionTok{parse\_number}\NormalTok{(PROD\_NAME)]}
+\DocumentationTok{\#\#\#\# Let\textquotesingle{}s check if the pack sizes look sensible}
+\NormalTok{transactionData[, .N, PACK\_SIZE][}\FunctionTok{order}\NormalTok{(PACK\_SIZE)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##     PACK_SIZE     N
+##  1:        70  1507
+##  2:        90  3008
+##  3:       110 22387
+##  4:       125  1454
+##  5:       134 25102
+##  6:       135  3257
+##  7:       150 40203
+##  8:       160  2970
+##  9:       165 15297
+## 10:       170 19983
+## 11:       175 66390
+## 12:       180  1468
+## 13:       190  2995
+## 14:       200  4473
+## 15:       210  6272
+## 16:       220  1564
+## 17:       250  3169
+## 18:       270  6285
+## 19:       330 12540
+## 20:       380  6416
+\end{verbatim}
+
+The largest size is 380g and the smallest size is 70g - seems sensible!
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Let\textquotesingle{}s check the output of the first few rows to see if we have indeedpicked out p}
+\FunctionTok{head}\NormalTok{(transactionData)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##          DATE STORE_NBR LYLTY_CARD_NBR TXN_ID PROD_NBR
+## 1: 2018-10-17         1           1000      1        5
+## 2: 2019-05-14         1           1307    348       66
+## 3: 2019-05-20         1           1343    383       61
+## 4: 2018-08-17         2           2373    974       69
+## 5: 2018-08-18         2           2426   1038      108
+## 6: 2019-05-16         4           4149   3333       16
+##                                   PROD_NAME PROD_QTY TOT_SALES PACK_SIZE
+## 1:   Natural Chip        Compny SeaSalt175g        2       6.0       175
+## 2:                 CCs Nacho Cheese    175g        3       6.3       175
+## 3:   Smiths Crinkle Cut  Chips Chicken 170g        2       2.9       170
+## 4:   Smiths Chip Thinly  S/Cream&Onion 175g        5      15.0       175
+## 5: Kettle Tortilla ChpsHny&Jlpno Chili 150g        3      13.8       150
+## 6: Smiths Crinkle Chips Salt & Vinegar 330g        1       5.7       330
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Let\textquotesingle{}s plot a histogram of PACK\_SIZE since we know that it is a categorical}
+\CommentTok{\#variable and not a continuous variable even though it is numeric.}
+\FunctionTok{hist}\NormalTok{(transactionData[, PACK\_SIZE])}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Data_preparation_files/figure-latex/pack_size histrogram-1.pdf}
+
+Pack sizes created look reasonable. Now to create brands, we can use the
+first word in PROD\_NAME to work out the brand name\ldots{}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Brands}
+\NormalTok{transactionData[, BRAND\_NAME }\SpecialCharTok{:}\ErrorTok{=} \FunctionTok{toupper}\NormalTok{(}\FunctionTok{substr}\NormalTok{(PROD\_NAME, }\DecValTok{1}\NormalTok{, }\FunctionTok{regexpr}\NormalTok{(}\AttributeTok{pattern =} \StringTok{\textquotesingle{} \textquotesingle{}}\NormalTok{, PROD\_NAME) }\SpecialCharTok{{-}} \DecValTok{1}\NormalTok{))]}
+\DocumentationTok{\#\#\#\# Checking brands}
+\NormalTok{transactionData[, .N, by }\OtherTok{=}\NormalTok{ BRAND\_NAME][}\FunctionTok{order}\NormalTok{(}\SpecialCharTok{{-}}\NormalTok{N)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##     BRAND_NAME     N
+##  1:     KETTLE 41288
+##  2:     SMITHS 27390
+##  3:   PRINGLES 25102
+##  4:    DORITOS 22041
+##  5:      THINS 14075
+##  6:        RRD 11894
+##  7:  INFUZIONS 11057
+##  8:         WW 10320
+##  9:       COBS  9693
+## 10:   TOSTITOS  9471
+## 11:   TWISTIES  9454
+## 12:   TYRRELLS  6442
+## 13:      GRAIN  6272
+## 14:    NATURAL  6050
+## 15:   CHEEZELS  4603
+## 16:        CCS  4551
+## 17:        RED  4427
+## 18:     DORITO  3183
+## 19:     INFZNS  3144
+## 20:      SMITH  2963
+## 21:    CHEETOS  2927
+## 22:      SNBTS  1576
+## 23:     BURGER  1564
+## 24: WOOLWORTHS  1516
+## 25:    GRNWVES  1468
+## 26:   SUNBITES  1432
+## 27:        NCC  1419
+## 28:     FRENCH  1418
+##     BRAND_NAME     N
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Checking brands}
+\CommentTok{\# Over to you! Check the results look reasonable.}
+\end{Highlighting}
+\end{Shaded}
+
+Some of the brand names look like they are of the same brands - such as
+RED and RRD, which are both Red Rock Deli chips. Let's combine these
+together.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Clean brand names}
+\NormalTok{transactionData[BRAND\_NAME }\SpecialCharTok{==} \StringTok{"RED"}\NormalTok{, BRAND\_NAME }\SpecialCharTok{:}\ErrorTok{=} \StringTok{"RRD"}\NormalTok{]}
+\NormalTok{transactionData[BRAND\_NAME }\SpecialCharTok{==} \StringTok{"GRAIN"}\NormalTok{, BRAND\_NAME }\SpecialCharTok{:}\ErrorTok{=} \StringTok{"GrnWves"}\NormalTok{]}
+\NormalTok{transactionData[BRAND\_NAME }\SpecialCharTok{==} \StringTok{"INFZNS"}\NormalTok{, BRAND\_NAME }\SpecialCharTok{:}\ErrorTok{=} \StringTok{"Infuzions"}\NormalTok{]}
+\NormalTok{transactionData[BRAND\_NAME }\SpecialCharTok{==} \StringTok{"WW"}\NormalTok{, BRAND\_NAME }\SpecialCharTok{:}\ErrorTok{=} \StringTok{"Woolworths"}\NormalTok{]}
+\NormalTok{transactionData[BRAND\_NAME }\SpecialCharTok{==} \StringTok{"SNBTS"}\NormalTok{, BRAND\_NAME }\SpecialCharTok{:}\ErrorTok{=} \StringTok{"Sunbites"}\NormalTok{]}
+
+\DocumentationTok{\#\#\#\# table}
+\NormalTok{transactionData[, .N, by }\OtherTok{=}\NormalTok{ BRAND\_NAME][}\FunctionTok{order}\NormalTok{(BRAND\_NAME)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##     BRAND_NAME     N
+##  1:     BURGER  1564
+##  2:        CCS  4551
+##  3:    CHEETOS  2927
+##  4:   CHEEZELS  4603
+##  5:       COBS  9693
+##  6:     DORITO  3183
+##  7:    DORITOS 22041
+##  8:     FRENCH  1418
+##  9:    GRNWVES  1468
+## 10:    GrnWves  6272
+## 11:  INFUZIONS 11057
+## 12:  Infuzions  3144
+## 13:     KETTLE 41288
+## 14:    NATURAL  6050
+## 15:        NCC  1419
+## 16:   PRINGLES 25102
+## 17:        RRD 16321
+## 18:      SMITH  2963
+## 19:     SMITHS 27390
+## 20:   SUNBITES  1432
+## 21:   Sunbites  1576
+## 22:      THINS 14075
+## 23:   TOSTITOS  9471
+## 24:   TWISTIES  9454
+## 25:   TYRRELLS  6442
+## 26: WOOLWORTHS  1516
+## 27: Woolworths 10320
+##     BRAND_NAME     N
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Check again}
+\NormalTok{brands }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}\FunctionTok{sort}\NormalTok{(}\FunctionTok{table}\NormalTok{(transactionData}\SpecialCharTok{$}\NormalTok{BRAND\_NAME),}\AttributeTok{decreasing =} \ConstantTok{TRUE}\NormalTok{ ))}
+
+\FunctionTok{setnames}\NormalTok{(brands,}\FunctionTok{c}\NormalTok{(}\StringTok{"BRAND"}\NormalTok{,}\StringTok{"freq"}\NormalTok{))}
+\FunctionTok{ggplot}\NormalTok{(brands,}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\NormalTok{BRAND,}\AttributeTok{y=}\NormalTok{ freq,}\AttributeTok{fill=}\NormalTok{BRAND)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{stat=}\StringTok{"identity"}\NormalTok{,}\AttributeTok{width =} \FloatTok{0.5}\NormalTok{) }\SpecialCharTok{+} 
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Brands"}\NormalTok{, }\AttributeTok{y =}\StringTok{"Frequency"}\NormalTok{,}\AttributeTok{title=}\StringTok{"Distribution Of Brand Purchases"}\NormalTok{)}\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{axis.text.x =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{angle =} \DecValTok{90}\NormalTok{, }\AttributeTok{vjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Data_preparation_files/figure-latex/Clean brand names-1.pdf}
+
+\hypertarget{examining-customer-data}{%
+\subsubsection{Examining customer data}\label{examining-customer-data}}
+
+Now that we are happy with the transaction dataset, let's have a look at
+the customer dataset.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Examining customer data}
+\FunctionTok{summary}\NormalTok{(customerData)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  LYLTY_CARD_NBR     LIFESTAGE         PREMIUM_CUSTOMER  
+##  Min.   :   1000   Length:72637       Length:72637      
+##  1st Qu.:  66202   Class :character   Class :character  
+##  Median : 134040   Mode  :character   Mode  :character  
+##  Mean   : 136186                                        
+##  3rd Qu.: 203375                                        
+##  Max.   :2373711
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{sum}\NormalTok{(}\FunctionTok{is.na}\NormalTok{(customerData))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{lifestageCategory }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}\FunctionTok{sort}\NormalTok{(}\FunctionTok{table}\NormalTok{(customerData}\SpecialCharTok{$}\NormalTok{LIFESTAGE),}\AttributeTok{decreasing =} \ConstantTok{TRUE}\NormalTok{ ))}
+\FunctionTok{setnames}\NormalTok{(lifestageCategory,}\FunctionTok{c}\NormalTok{(}\StringTok{"lifestage"}\NormalTok{,}\StringTok{"freq"}\NormalTok{))}
+
+
+\DocumentationTok{\#\# lifestageCategory}
+\FunctionTok{ggplot}\NormalTok{(lifestageCategory,}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\NormalTok{lifestage,}\AttributeTok{y=}\NormalTok{ freq,}\AttributeTok{fill=}\NormalTok{lifestage)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{stat=}\StringTok{"identity"}\NormalTok{,}\AttributeTok{width =} \FloatTok{0.5}\NormalTok{) }\SpecialCharTok{+} 
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"lifestage"}\NormalTok{, }\AttributeTok{y =}\StringTok{"frequency"}\NormalTok{,}\AttributeTok{title=}\StringTok{"Distribution Of Customers Over Lifestages"}\NormalTok{)}\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{axis.text.x =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{angle =} \DecValTok{90}\NormalTok{, }\AttributeTok{vjust =} \FloatTok{0.5}\NormalTok{))}\SpecialCharTok{+}\FunctionTok{scale\_fill\_brewer}\NormalTok{(}\AttributeTok{palette=}\StringTok{"Dark2"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Data_preparation_files/figure-latex/1 Exploratory data analysis-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{premiumCustomerType }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}\FunctionTok{sort}\NormalTok{(}\FunctionTok{table}\NormalTok{(customerData}\SpecialCharTok{$}\NormalTok{PREMIUM\_CUSTOMER),}\AttributeTok{decreasing =} \ConstantTok{TRUE}\NormalTok{ ))}
+\FunctionTok{setnames}\NormalTok{(premiumCustomerType,}\FunctionTok{c}\NormalTok{(}\StringTok{"premium\_customer\_type"}\NormalTok{,}\StringTok{"freq"}\NormalTok{))}
+
+
+\DocumentationTok{\#\#premiumCustomerType}
+\FunctionTok{ggplot}\NormalTok{(premiumCustomerType,}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\NormalTok{premium\_customer\_type,}\AttributeTok{y=}\NormalTok{ freq,}\AttributeTok{fill=}\NormalTok{premium\_customer\_type)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{stat=}\StringTok{"identity"}\NormalTok{,}\AttributeTok{width =} \FloatTok{0.5}\NormalTok{) }\SpecialCharTok{+} 
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"lifestage"}\NormalTok{, }\AttributeTok{y =}\StringTok{"frequency"}\NormalTok{,}\AttributeTok{title=}\StringTok{"Distribution Of Customers Over Premium Types"}\NormalTok{)}\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{axis.text.x =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{angle =} \DecValTok{90}\NormalTok{, }\AttributeTok{vjust =} \FloatTok{0.5}\NormalTok{))}\SpecialCharTok{+}\FunctionTok{scale\_fill\_brewer}\NormalTok{(}\AttributeTok{palette=}\StringTok{"Dark2"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Data_preparation_files/figure-latex/1 Exploratory data analysis-2.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Merge transaction data to customer data}
+\NormalTok{data }\OtherTok{\textless{}{-}} \FunctionTok{merge}\NormalTok{(transactionData, customerData, }\AttributeTok{all.x =} \ConstantTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+As the number of rows in \texttt{data} is the same as that of
+\texttt{transactionData}, we can be sure that no duplicates were
+created. This is because we created \texttt{data} by setting
+\texttt{all.x\ =\ TRUE} (in other words, a left join) which means take
+all the rows in \texttt{transactionData} and find rows with matching
+values in shared columns and then joining the details in these rows to
+the \texttt{x} or the first mentioned table.
+
+Let's also check if some customers were not matched on by checking for
+nulls.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{sum}\NormalTok{(}\FunctionTok{is.na}\NormalTok{(data))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0
+\end{verbatim}
+
+Great, there are no nulls! So all our customers in the transaction data
+has been accounted for in the customer dataset. Note that if you are
+continuing with Task 2, you may want to retain this dataset which you
+can write out as a csv
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{fwrite}\NormalTok{(data, }\StringTok{"QVI\_data.csv"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+Data exploration is now complete! \#\# Data analysis on customer
+segments Now that the data is ready for analysis, we can define some
+metrics of interest to the client: - Who spends the most on chips (total
+sales), describing customers by lifestage and how premium their general
+purchasing behaviour is - How many customers are in each segment - How
+many chips are bought per customer by segment - What's the average chip
+price by customer segment We could also ask our data team for more
+information. Examples are: - The customer's total spend over the period
+and total spend for each transaction to understand what proportion of
+their grocery spend is on chips - Proportion of customers in each
+customer segment overall to compare against the mix of customers who
+purchase chips Let's start with calculating total sales by LIFESTAGE and
+PREMIUM\_CUSTOMER and plotting the split by these segments to describe
+which customer segment contribute most to chip sales.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Total sales by LIFESTAGE and PREMIUM\_CUSTOMER}
+\NormalTok{sales }\OtherTok{\textless{}{-}}\NormalTok{ data[, .(}\AttributeTok{SALES =} \FunctionTok{sum}\NormalTok{(TOT\_SALES)), .(LIFESTAGE, PREMIUM\_CUSTOMER)]}
+\DocumentationTok{\#\#\#\# Create plot}
+\NormalTok{p }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data =}\NormalTok{ sales) }\SpecialCharTok{+}
+\FunctionTok{geom\_mosaic}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{weight =}\NormalTok{ SALES, }\AttributeTok{x =} \FunctionTok{product}\NormalTok{(PREMIUM\_CUSTOMER, LIFESTAGE), }\AttributeTok{fill =}\NormalTok{ PREMIUM\_CUSTOMER)) }\SpecialCharTok{+}
+\FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Lifestage"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Premium customer flag"}\NormalTok{, }\AttributeTok{title =} \StringTok{"Proportion of sales"}\NormalTok{) }\SpecialCharTok{+}
+\FunctionTok{theme}\NormalTok{(}\AttributeTok{axis.text.x =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{angle =} \DecValTok{90}\NormalTok{, }\AttributeTok{vjust =} \FloatTok{0.5}\NormalTok{))}
+\DocumentationTok{\#\#\#\# Plot and label with proportion of sales}
+\NormalTok{p }\SpecialCharTok{+} \FunctionTok{geom\_text}\NormalTok{(}\AttributeTok{data =} \FunctionTok{ggplot\_build}\NormalTok{(p)}\SpecialCharTok{$}\NormalTok{data[[}\DecValTok{1}\NormalTok{]], }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ (xmin }\SpecialCharTok{+}\NormalTok{ xmax)}\SpecialCharTok{/}\DecValTok{2}\NormalTok{ , }\AttributeTok{y =}
+\NormalTok{(ymin }\SpecialCharTok{+}\NormalTok{ ymax)}\SpecialCharTok{/}\DecValTok{2}\NormalTok{, }\AttributeTok{label =} \FunctionTok{as.character}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\FunctionTok{round}\NormalTok{(.wt}\SpecialCharTok{/}\FunctionTok{sum}\NormalTok{(.wt),}\DecValTok{3}\NormalTok{)}\SpecialCharTok{*}\DecValTok{100}\NormalTok{,}
+\StringTok{\textquotesingle{}\%\textquotesingle{}}\NormalTok{))))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: `unite_()` was deprecated in tidyr 1.2.0.
+## Please use `unite()` instead.
+## This warning is displayed once every 8 hours.
+## Call `lifecycle::last_lifecycle_warnings()` to see where this warning was generated.
+\end{verbatim}
+
+\begin{center}\includegraphics{Data_preparation_files/figure-latex/unnamed-chunk-10-1} \end{center}
+
+Sales are coming mainly from Budget - older families, Mainstream - young
+singles/couples, and Mainstream - retirees Let's see if the higher sales
+are due to there being more customers who buy chips.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Number of customers by LIFESTAGE and PREMIUM\_CUSTOMER}
+\NormalTok{customers }\OtherTok{\textless{}{-}}\NormalTok{ data[, .(}\AttributeTok{CUSTOMERS =} \FunctionTok{uniqueN}\NormalTok{(LYLTY\_CARD\_NBR)), .(LIFESTAGE, PREMIUM\_CUSTOMER)][}\FunctionTok{order}\NormalTok{(}\SpecialCharTok{{-}}\NormalTok{CUSTOMERS)]}
+\DocumentationTok{\#\#\#\# Create plot}
+\NormalTok{p }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data =}\NormalTok{ customers) }\SpecialCharTok{+}
+\FunctionTok{geom\_mosaic}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{weight =}\NormalTok{ CUSTOMERS, }\AttributeTok{x =} \FunctionTok{product}\NormalTok{(PREMIUM\_CUSTOMER, LIFESTAGE), }\AttributeTok{fill =}\NormalTok{ PREMIUM\_CUSTOMER)) }\SpecialCharTok{+}
+\FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Lifestage"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Premium customer flag"}\NormalTok{, }\AttributeTok{title =} \StringTok{"Proportion of customers"}\NormalTok{) }\SpecialCharTok{+}
+\FunctionTok{theme}\NormalTok{(}\AttributeTok{axis.text.x =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{angle =} \DecValTok{90}\NormalTok{, }\AttributeTok{vjust =} \FloatTok{0.5}\NormalTok{))}
+\DocumentationTok{\#\#\#\# Plot and label with proportion of customers}
+\NormalTok{p }\SpecialCharTok{+} \FunctionTok{geom\_text}\NormalTok{(}\AttributeTok{data =} \FunctionTok{ggplot\_build}\NormalTok{(p)}\SpecialCharTok{$}\NormalTok{data[[}\DecValTok{1}\NormalTok{]], }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ (xmin }\SpecialCharTok{+}\NormalTok{ xmax)}\SpecialCharTok{/}\DecValTok{2}\NormalTok{ , }\AttributeTok{y =}
+\NormalTok{(ymin }\SpecialCharTok{+}\NormalTok{ ymax)}\SpecialCharTok{/}\DecValTok{2}\NormalTok{, }\AttributeTok{label =} \FunctionTok{as.character}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\FunctionTok{round}\NormalTok{(.wt}\SpecialCharTok{/}\FunctionTok{sum}\NormalTok{(.wt),}\DecValTok{3}\NormalTok{)}\SpecialCharTok{*}\DecValTok{100}\NormalTok{,}
+\StringTok{\textquotesingle{}\%\textquotesingle{}}\NormalTok{))))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\includegraphics{Data_preparation_files/figure-latex/unnamed-chunk-11-1} \end{center}
+
+There are more Mainstream - young singles/couples and Mainstream -
+retirees who buy chips. This contributes to there being more sales to
+these customer segments but this is not a major driver for the Budget -
+Older families segment. Higher sales may also be driven by more units of
+chips being bought per customer. Let's have a look at this next.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Average number of units per customer by LIFESTAGE and PREMIUM\_CUSTOMER}
+\NormalTok{avg\_units }\OtherTok{\textless{}{-}}\NormalTok{ data[, .(}\AttributeTok{AVG =} \FunctionTok{sum}\NormalTok{(PROD\_QTY)}\SpecialCharTok{/}\FunctionTok{uniqueN}\NormalTok{(LYLTY\_CARD\_NBR)),.(LIFESTAGE, PREMIUM\_CUSTOMER)][}\FunctionTok{order}\NormalTok{(}\SpecialCharTok{{-}}\NormalTok{AVG)]}
+\DocumentationTok{\#\#\#\# Create plot}
+\FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data =}\NormalTok{ avg\_units, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{weight =}\NormalTok{ AVG, }\AttributeTok{x =}\NormalTok{ LIFESTAGE, }\AttributeTok{fill =}\NormalTok{PREMIUM\_CUSTOMER)) }\SpecialCharTok{+}
+\FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{position =} \FunctionTok{position\_dodge}\NormalTok{()) }\SpecialCharTok{+}
+\FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Lifestage"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Avg units per transaction"}\NormalTok{, }\AttributeTok{title =} \StringTok{"Units percustomer"}\NormalTok{) }\SpecialCharTok{+}
+\FunctionTok{theme}\NormalTok{(}\AttributeTok{axis.text.x =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{angle =} \DecValTok{90}\NormalTok{, }\AttributeTok{vjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\includegraphics{Data_preparation_files/figure-latex/unnamed-chunk-12-1} \end{center}
+
+Older families and young families in general buy more chips per customer
+Let's also investigate the average price per unit chips bought for each
+customer segment as this is also a driver of total sales.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Average price per unit by LIFESTAGE and PREMIUM\_CUSTOMER}
+\NormalTok{avg\_price }\OtherTok{\textless{}{-}}\NormalTok{ data[, .(}\AttributeTok{AVG =} \FunctionTok{sum}\NormalTok{(TOT\_SALES)}\SpecialCharTok{/}\FunctionTok{sum}\NormalTok{(PROD\_QTY)), .(LIFESTAGE,PREMIUM\_CUSTOMER)][}\FunctionTok{order}\NormalTok{(}\SpecialCharTok{{-}}\NormalTok{AVG)]}
+\DocumentationTok{\#\#\#\# Create plot}
+\FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data =}\NormalTok{ avg\_price, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{weight =}\NormalTok{ AVG, }\AttributeTok{x =}\NormalTok{ LIFESTAGE, }\AttributeTok{fill =}\NormalTok{PREMIUM\_CUSTOMER)) }\SpecialCharTok{+}
+\FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{position =} \FunctionTok{position\_dodge}\NormalTok{()) }\SpecialCharTok{+}
+\FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Lifestage"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Avg price per unit"}\NormalTok{, }\AttributeTok{title =} \StringTok{"Price per unit"}\NormalTok{) }\SpecialCharTok{+}
+\FunctionTok{theme}\NormalTok{(}\AttributeTok{axis.text.x =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{angle =} \DecValTok{90}\NormalTok{, }\AttributeTok{vjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\includegraphics{Data_preparation_files/figure-latex/unnamed-chunk-13-1} \end{center}
+
+Mainstream midage and young singles and couples are more willing to pay
+more per packet of chips compared to their budget and premium
+counterparts. This may be due to premium shoppers being more likely to
+buy healthy snacks and when they buy chips, this is mainly for
+entertainment purposes rather than their own consumption. This is also
+supported by there being fewer premium midage and young singles and
+couples buying chips compared to their mainstream counterparts. As the
+difference in average price per unit isn't large, we can check if this
+
+difference is statistically different.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Perform an independent t{-}test between mainstream vs premium and budget midageand}
+\DocumentationTok{\#\#\#\# young singles and couples}
+\NormalTok{pricePerUnit }\OtherTok{\textless{}{-}}\NormalTok{ data[, price }\SpecialCharTok{:}\ErrorTok{=}\NormalTok{ TOT\_SALES}\SpecialCharTok{/}\NormalTok{PROD\_QTY]}
+\FunctionTok{t.test}\NormalTok{(data[LIFESTAGE }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"YOUNG SINGLES/COUPLES"}\NormalTok{, }\StringTok{"MIDAGE SINGLES/COUPLES"}\NormalTok{) }\SpecialCharTok{\&}\NormalTok{ PREMIUM\_CUSTOMER }\SpecialCharTok{==} \StringTok{"Mainstream"}\NormalTok{, price], data[LIFESTAGE }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"YOUNG SINGLES/COUPLES"}\NormalTok{, }\StringTok{"MIDAGE SINGLES/COUPLES"}\NormalTok{) }\SpecialCharTok{\&}\NormalTok{ PREMIUM\_CUSTOMER }\SpecialCharTok{!=} \StringTok{"Mainstream"}\NormalTok{, price], }\AttributeTok{alternative =} \StringTok{"greater"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##
+## Welch Two Sample t-test
+##
+## data: data[LIFESTAGE %in% c("YOUNG SINGLES/COUPLES", "MIDAGE
+SINGLES/COUPLES") & PREMIUM_CUSTOMER == "Mainstream", price] and data[LIFESTAGE
+%in% c("YOUNG SINGLES/COUPLES", "MIDAGE SINGLES/COUPLES") & PREMIUM_CUSTOMER !=
+"Mainstream", price]
+## t = 37.624, df = 54791, p-value < 2.2e-16
+## alternative hypothesis: true difference in means is greater than 0
+## 95 percent confidence interval:
+## 0.3187234 Inf
+## sample estimates:
+## mean of x mean of y
+## 4.039786 3.706491
+\end{verbatim}
+
+The t-test results in a p-value of XXXXXXX, i.e.~the unit price for
+mainstream, young and mid-age singles and couples {[}ARE / ARE NOT{]}
+significantly higher than that of budget or premium, young and midage
+singles and couples. \#\# Deep dive into specific customer segments for
+insights We have found quite a few interesting insights that we can dive
+deeper into. We might want to target customer segments that contribute
+the most to sales to retain them or further increase sales. Let's look
+at Mainstream - young singles/couples. For instance, let's find out if
+they tend to buy a particular brand of chips.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Deep dive into Mainstream, young singles/couples}
+\NormalTok{segment1}\OtherTok{\textless{}{-}}\NormalTok{ data[LIFESTAGE }\SpecialCharTok{==} \StringTok{"YOUNG SINGLES/COUPLES"} \SpecialCharTok{\&}\NormalTok{ PREMIUM\_CUSTOMER }\SpecialCharTok{==} \StringTok{"Mainstream"}\NormalTok{,]}
+\NormalTok{other }\OtherTok{\textless{}{-}}\NormalTok{ data[}\SpecialCharTok{!}\NormalTok{(LIFESTAGE }\SpecialCharTok{==} \StringTok{"YOUNG SINGLES/COUPLES"} \SpecialCharTok{\&}\NormalTok{ PREMIUM\_CUSTOMER }\SpecialCharTok{==} \StringTok{"Mainstream"}\NormalTok{),]}
+\DocumentationTok{\#\#\#\# Brand affinity compared to the rest of the population}
+\NormalTok{quantity\_segment1 }\OtherTok{\textless{}{-}}\NormalTok{ segment1[, }\FunctionTok{sum}\NormalTok{(PROD\_QTY)]}
+
+\NormalTok{quantity\_other }\OtherTok{\textless{}{-}}\NormalTok{ other[, }\FunctionTok{sum}\NormalTok{(PROD\_QTY)]}
+\NormalTok{quantity\_segment1\_by\_brand }\OtherTok{\textless{}{-}}\NormalTok{ segment1[, .(}\AttributeTok{targetSegment =} \FunctionTok{sum}\NormalTok{(PROD\_QTY)}\SpecialCharTok{/}\NormalTok{quantity\_segment1), by }\OtherTok{=}\NormalTok{ BRAND\_NAME]}
+\NormalTok{quantity\_other\_by\_brand }\OtherTok{\textless{}{-}}\NormalTok{ other[, .(}\AttributeTok{other =} \FunctionTok{sum}\NormalTok{(PROD\_QTY)}\SpecialCharTok{/}\NormalTok{quantity\_other), by }\OtherTok{=}\NormalTok{ BRAND\_NAME]}
+\NormalTok{brand\_proportions }\OtherTok{\textless{}{-}} \FunctionTok{merge}\NormalTok{(quantity\_segment1\_by\_brand, quantity\_other\_by\_brand)[, affinityToBrand }\SpecialCharTok{:}\ErrorTok{=}\NormalTok{ targetSegment}\SpecialCharTok{/}\NormalTok{other]}
+\NormalTok{brand\_proportions[}\FunctionTok{order}\NormalTok{(}\SpecialCharTok{{-}}\NormalTok{affinityToBrand)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##     BRAND_NAME targetSegment       other affinityToBrand
+##  1:     DORITO   0.015707384 0.012759861       1.2309996
+##  2:   TYRRELLS   0.031552795 0.025692464       1.2280953
+##  3:   TWISTIES   0.046183575 0.037876520       1.2193194
+##  4:    DORITOS   0.107053140 0.088314823       1.2121764
+##  5:     KETTLE   0.197984817 0.165553442       1.1958967
+##  6:   TOSTITOS   0.045410628 0.037977861       1.1957131
+##  7:  Infuzions   0.014934438 0.012573300       1.1877898
+##  8:   PRINGLES   0.119420290 0.100634769       1.1866703
+##  9:    GrnWves   0.029123533 0.025121265       1.1593180
+## 10:       COBS   0.044637681 0.039048861       1.1431238
+## 11:  INFUZIONS   0.049744651 0.044491379       1.1180739
+## 12:      THINS   0.060372671 0.056986370       1.0594230
+## 13:   CHEEZELS   0.017971014 0.018646902       0.9637534
+## 14:     SMITHS   0.089772257 0.112215379       0.7999996
+## 15:     FRENCH   0.003947550 0.005758060       0.6855694
+## 16:    CHEETOS   0.008033126 0.012066591       0.6657329
+## 17:        RRD   0.043809524 0.067493678       0.6490908
+## 18:    NATURAL   0.015955832 0.024980768       0.6387246
+## 19:        NCC   0.003643892 0.005873221       0.6204248
+## 20:        CCS   0.011180124 0.018895650       0.5916771
+## 21:    GRNWVES   0.003588682 0.006066692       0.5915385
+## 22:      SMITH   0.006597654 0.012368313       0.5334320
+## 23:   Sunbites   0.003478261 0.006587221       0.5280316
+## 24: Woolworths   0.021256039 0.043049561       0.4937574
+## 25:   SUNBITES   0.002870945 0.005992989       0.4790507
+## 26: WOOLWORTHS   0.002843340 0.006377627       0.4458304
+## 27:     BURGER   0.002926156 0.006596434       0.4435967
+##     BRAND_NAME targetSegment       other affinityToBrand
+\end{verbatim}
+
+We can see that : • Mainstream young singles/couples are 23\% more
+likely to purchase Tyrrells chips compared to the rest of the population
+• Mainstream young singles/couples are 56\% less likely to buy Burger
+Rings compared to the rest of the population Let's also find out if our
+target segment tends to purchase larger packs of chips.
+
+Let's also find out if our target segment tends to buy larger packs of
+chips.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\# Preferred pack size compared to the rest of the population}
+\NormalTok{quantity\_segment1\_by\_pack }\OtherTok{\textless{}{-}}\NormalTok{ segment1[, .(}\AttributeTok{targetSegment =} \FunctionTok{sum}\NormalTok{(PROD\_QTY)}\SpecialCharTok{/}\NormalTok{quantity\_segment1), by }\OtherTok{=}\NormalTok{ PACK\_SIZE]}
+\NormalTok{quantity\_other\_by\_pack }\OtherTok{\textless{}{-}}\NormalTok{ other[, .(}\AttributeTok{other =} \FunctionTok{sum}\NormalTok{(PROD\_QTY)}\SpecialCharTok{/}\NormalTok{quantity\_other), by }\OtherTok{=}\NormalTok{PACK\_SIZE]}
+\NormalTok{pack\_proportions }\OtherTok{\textless{}{-}} \FunctionTok{merge}\NormalTok{(quantity\_segment1\_by\_pack, quantity\_other\_by\_pack)[, affinityToPack }\SpecialCharTok{:}\ErrorTok{=}\NormalTok{ targetSegment}\SpecialCharTok{/}\NormalTok{other]}
+\NormalTok{pack\_proportions[}\FunctionTok{order}\NormalTok{(}\SpecialCharTok{{-}}\NormalTok{affinityToPack)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##     PACK_SIZE targetSegment       other affinityToPack
+##  1:       270   0.031828847 0.025095929      1.2682873
+##  2:       380   0.032160110 0.025584213      1.2570295
+##  3:       330   0.061283644 0.050161917      1.2217166
+##  4:       134   0.119420290 0.100634769      1.1866703
+##  5:       110   0.106280193 0.089791190      1.1836372
+##  6:       210   0.029123533 0.025121265      1.1593180
+##  7:       135   0.014768806 0.013075403      1.1295106
+##  8:       250   0.014354727 0.012780590      1.1231662
+##  9:       170   0.080772947 0.080985964      0.9973697
+## 10:       150   0.157598344 0.163420656      0.9643722
+## 11:       175   0.254989648 0.270006956      0.9443818
+## 12:       165   0.055652174 0.062267662      0.8937572
+## 13:       190   0.007481021 0.012442016      0.6012708
+## 14:       180   0.003588682 0.006066692      0.5915385
+## 15:       160   0.006404417 0.012372920      0.5176157
+## 16:        90   0.006349206 0.012580210      0.5046980
+## 17:       125   0.003008972 0.006036750      0.4984423
+## 18:       200   0.008971705 0.018656115      0.4808989
+## 19:        70   0.003036577 0.006322350      0.4802924
+## 20:       220   0.002926156 0.006596434      0.4435967
+\end{verbatim}
+
+{[}INSIGHTS{]}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Sales have mainly been due to Budget - older families, Mainstream -
+  young singles/couples, and Mainstream- retirees shoppers.
+\item
+  We found that the high spending on chips for mainstream young
+  singles/couples and retirees is due to more of them than other buyers.
+\item
+  Mainstream, mid-age, and young singles and couples are also more
+  likely to pay more per packet of chips.
+\end{enumerate}
+
+It is indicative of impulse buying behavior.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\item
+  We've also found that Mainstream young singles and couples are 23\%
+  more likely to purchase Tyrrells chips than the rest of the
+  population.
+\item
+  The Category Manager may want to increase the category's performance
+  by off-locating some Tyrrells and smaller packs of chips in
+  discretionary space near segments where young singles and couples
+  frequent more often to increase visibility and impulse behavior
+\end{enumerate}
+
+\end{document}
